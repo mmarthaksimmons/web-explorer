@@ -7,7 +7,7 @@ import os
 
 os.environ["GOOGLE_API_KEY"] = "AIzaSyANu41ws9ISdMaLRDN47HvGC3qF6DsX9cU" # Get it at https://console.cloud.google.com/apis/api/customsearch.googleapis.com/credentials
 os.environ["GOOGLE_CSE_ID"] = "f12c29c6a0cc74ce0" # Get it at https://programmablesearchengine.google.com/
-os.environ["OPENAI_API_BASE"] = "https://api.openai.com/v1/models"
+os.environ["OPENAI_API_BASE"] = "https://api.openai.com/v1"
 os.environ["OPENAI_API_KEY"] = "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" # Get it at https://beta.openai.com/account/api-keys
 
 st.set_page_config(page_title="Interweb Explorer", page_icon="🌐")
