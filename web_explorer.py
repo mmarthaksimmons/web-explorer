@@ -26,7 +26,7 @@ def settings():
 
     # LLM
     from langchain.chat_models import ChatOpenAI
-    llm = ChatOpenAI(model_name="codellama/CodeLlama-34b-Instruct-hf", temperature=0, streaming=True)
+    llm = ChatOpenAI(model_name="meta-llama/Llama-2-7b-chat-hf", temperature=0, streaming=True)
 
     # Search
     from langchain.utilities import GoogleSearchAPIWrapper
