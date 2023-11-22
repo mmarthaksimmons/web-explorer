@@ -7,8 +7,8 @@ import os
 
 os.environ["GOOGLE_API_KEY"] = "AIzaSyANu41ws9ISdMaLRDN47HvGC3qF6DsX9cU" # Get it at https://console.cloud.google.com/apis/api/customsearch.googleapis.com/credentials
 os.environ["GOOGLE_CSE_ID"] = "f12c29c6a0cc74ce0" # Get it at https://programmablesearchengine.google.com/
-os.environ["OPENAI_API_BASE"] = "https://api.openai.com/v1/models"
-os.environ["OPENAI_API_KEY"] = "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" # Get it at https://beta.openai.com/account/api-keys
+os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
+os.environ["OPENAI_API_KEY"] = "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" # Get it at https://beta.openai.com/account/api-keys
 
 st.set_page_config(page_title="Interweb Explorer", page_icon="🌐")
 
@@ -26,7 +26,7 @@ def settings():
 
     # LLM
     from langchain.chat_models import ChatOpenAI
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo-16k", temperature=0, streaming=True)
+    llm = ChatOpenAI(model_name="openai/gpt-3.5-turbo", temperature=0, streaming=True)
 
     # Search
     from langchain.utilities import GoogleSearchAPIWrapper
